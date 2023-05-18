@@ -10,7 +10,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>Nhóm 10</title>
+  <title>Nhóm 9</title>
   <link href="css/owl.carousel.css" type="text/css" rel="stylesheet">
   <link href="css/owl.theme.default.min.css" type="text/css" rel="stylesheet">
   <link href="css/style.min.css" type="text/css" rel="stylesheet">
