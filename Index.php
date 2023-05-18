@@ -83,23 +83,25 @@
       include("header.php");
     ?>
     <div id="body-wrap" class="container">
-      <?php
-        include("movie-hot.php");
-      ?>
-      <?php
-        if (isset($_GET['mod'])) {
-          $mod=$_GET['mod'];
-        }
-        if($mod=='')$mod='home';
-        $mod=str_replace('../','',$mod);
-        if(is_file("{$mod}.php"))
-          include("{$mod}.php");
-        else
-          echo 'Invalid URL';
-      ?>
-      <?php
-        include("sidebar.php");
-      ?>
+      <div class="vienbody">
+        <?php
+          include("movie-hot.php");
+        ?>
+        <?php
+          if (isset($_GET['mod'])) {
+            $mod=$_GET['mod'];
+          }
+          if($mod=='')$mod='home';
+          $mod=str_replace('../','',$mod);
+          if(is_file("{$mod}.php"))
+            include("{$mod}.php");
+          else
+            echo 'Invalid URL';
+        ?>
+        <?php
+          include("sidebar.php");
+        ?>
+      </div>
     </div>
     <?php
       include("footer.php");

@@ -991,17 +991,106 @@ img.captcha-image {
 #body-wrap,
 #movie-hot {
   font-family: Tahoma, Geneva, sans-serif;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
-
-
-#body-wrap {
+/* #body-wrap {
   border: 6px solid;
   backdrop-filter: contrast(0.5);
   background: transparent;
   padding-bottom: 10px;
+} */
+#body-wrap{
+  background-color: #9c9c9c;
+  /* width: 310px;
+  height: 330px; */
+  /* display: flex; */
+  width: 1002px;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 15px;
+  padding: 10px;
+  z-index: 1030;
+  transition: 0.4s;
+  overflow: hidden;
+  position: relative;
+  animation: shadow 3s linear infinite;
 }
+#body-wrap::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 2000px;
+  height: 4400px;
+  z-index: -1;
+  background-image: conic-gradient(transparent, transparent, transparent, crimson);
+  animation: rotate 3s linear infinite;
+  /* animation-delay: 1.5s; */
+}
+#body-wrap::after {
+  content: "";
+  position: absolute;
+  bottom: -50%;
+  right: -50%;
+  width: 2000px;
+  height: 4400px;
+  transform: rotate(180deg);
+  background-image: conic-gradient(transparent, transparent, transparent, #ff9999);
+  z-index: -1;
+  animation: rotate1 3s linear infinite;
+}
+.vienbody{
+
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #000;
+  padding: 5px;
+  z-index: 1030;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+ 
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate1 {
+  0% {
+    transform: rotate(180deg);
+  }
+
+  0% {
+    transform: rotate(-180deg);
+  }
+}
+
+@keyframes shadow {
+  0% {
+    box-shadow: 6px 6px 15px rgba(255, 194, 80, 0.25),
+  -6px -6px 20px rgba(255, 0, 0, 0.25);
+  }
+
+  50% {
+    box-shadow: -6px -6px 15px rgba(255, 194, 80, 0.25),
+  6px 6px 20px rgba(255, 0, 0, 0.25);
+  }
+
+  100% {
+    box-shadow: 6px 6px 15px rgba(255, 194, 80, 0.25),
+  -6px -6px 20px rgba(255, 0, 0, 0.25);
+  }
+}
+
 
 #content {
   float: left;
