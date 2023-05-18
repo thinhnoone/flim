@@ -875,7 +875,7 @@ img.captcha-image {
 }
 
 #nav li.home {
-  padding-left: 2px;
+  padding-left: 90px;
 }
 
 #nav li a {
@@ -883,7 +883,7 @@ img.captcha-image {
   color: #fff;
   font-weight: 700;
   text-transform: uppercase;
-  padding: 0 20px;
+  padding: 0 47px;
   white-space: nowrap;
 }
 
@@ -923,12 +923,14 @@ img.captcha-image {
 
 #nav li.home a {
   background-image: url(../images/icons/home.png) ;
-  background-position: center;
-  background-size: cover;
-
-  width: 0.1px;
-  /* height: 0.1px; */
-  padding-bottom: 2px;
+  background-position: left;
+  background-size: contain;
+  height: 27.1px;
+  width: 0.1;
+  height: 27.1px;
+  margin-top: 5px;
+  background-repeat: no-repeat;
+  padding-left: 0px;
 }
 
 #nav li.home a:hover {
@@ -993,6 +995,7 @@ img.captcha-image {
 }
 
 #body-wrap {
+  border: 2px solid;
   backdrop-filter: contrast(0.5);
   background: transparent;
   padding-bottom: 10px;
