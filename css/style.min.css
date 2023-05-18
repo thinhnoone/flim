@@ -995,7 +995,7 @@ img.captcha-image {
 }
 
 #body-wrap {
-  border: 2px solid;
+  border: 5px solid;
   backdrop-filter: contrast(0.5);
   background: transparent;
   padding-bottom: 10px;
