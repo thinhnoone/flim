@@ -1010,7 +1010,7 @@ img.captcha-image {
   justify-content: space-around;
   align-items: center;
   border-radius: 15px;
-  padding: 11px;
+  padding: 5px;
   z-index: 1030;
   transition: 0.4s;
   overflow: hidden;
@@ -1040,7 +1040,7 @@ img.captcha-image {
   background-image: conic-gradient(transparent, transparent, transparent, #ff9999);
   z-index: -1;
   animation: rotate1 3s linear infinite;
-}
+} 
 .vienbody{
 
   flex-flow: column;
