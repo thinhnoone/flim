@@ -1,7 +1,7 @@
 <?php
 	$host="localhost";
 	$user="root";
-	$pass="vertrigo";
+	$pass="";
 	$db="film";
 	//error_reporting(0);//Chan thong bao loi
 
