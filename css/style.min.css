@@ -994,8 +994,10 @@ img.captcha-image {
   overflow: hidden;
 }
 
+
+
 #body-wrap {
-  border: 8px solid;
+  border: 6px solid;
   backdrop-filter: contrast(0.5);
   background: transparent;
   padding-bottom: 10px;
