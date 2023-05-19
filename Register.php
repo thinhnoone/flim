@@ -157,7 +157,7 @@
       display: block;
       min-height: 20px;
       padding-left: 20px;
-      margin-top: 10px;
+      margin-top: 0px;
       margin-bottom: 10px;
       vertical-align: middle;
     }

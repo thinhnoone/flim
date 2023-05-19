@@ -439,7 +439,7 @@ img.captcha-image {
 
 #sign .login {
   position: relative;
-  margin-left: 50px;
+  margin-left: 75px;
   text-decoration: none;
   border: none;
   font-size: 10px;
@@ -589,7 +589,7 @@ img.captcha-image {
   -webkit-border-radius: 6px 6px 0 0;
 }
 
-#sign .login .login-form {
+/* #sign .login .login-form {
   z-index: 10;
   background: #343434;
   width: 280px;
@@ -597,7 +597,7 @@ img.captcha-image {
   -moz-border-radius: 0 6px 6px;
   -webkit-border-radius: 0 6px 6px;
   height: 154px;
-}
+} */
 
 /* #sign .login-form {
   display: none;
@@ -610,9 +610,9 @@ img.captcha-image {
   color: #c8c8c8;
 } */
 
-#sign .login-form{
-  height: 350px;
-  width: 300px;
+#sign .login .login-form{
+  height: 197px;
+  width: 250px;
   overflow: hidden;
   border: none;
   border-radius: 10px;
@@ -624,13 +624,58 @@ img.captcha-image {
   flex-direction: column;
   transition: all 1s linear;
   animation: fly 4s linear infinite alternate;
+  margin-left: 318px;
+  margin-top: -34px;
 }
 
+#sign .login-form::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 800px;
+  top: 0;
+  z-index: -1;
+  background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 255));
+  animation: rotate 5s linear infinite;
+  transition: all 0.2s linear;
+}
+
+#sign .login-form::after {
+  content: '';
+  position: absolute;
+  inset: 6px;
+  z-index: -1;
+  border-radius: 10px;
+  background-image: linear-gradient(to bottom right,darkblue, 180px,purple);
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fly {
+  0% {
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(10px);
+  }
+}
 
 #sign .login-form .input {
   background: #1f1f1f;
   margin: 15px 15px 0;
-  width: 226px;
+  width: 195px;
   padding: 0 10px;
   height: 31px;
   line-height: 31px;
