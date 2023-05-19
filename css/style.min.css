@@ -599,7 +599,7 @@ img.captcha-image {
   height: 154px;
 }
 
-#sign .login-form {
+/* #sign .login-form {
   display: none;
   position: absolute;
   z-index: 9;
@@ -608,7 +608,24 @@ img.captcha-image {
   font-size: 11px;
   overflow: hidden;
   color: #c8c8c8;
+} */
+
+#sign .login-form{
+  height: 350px;
+  width: 300px;
+  overflow: hidden;
+  border: none;
+  border-radius: 10px;
+  background-image: linear-gradient(to bottom right,darkblue, 180px,purple);
+  filter: blur(0.4px);
+  box-shadow: -10px 10px 15px black;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  transition: all 1s linear;
+  animation: fly 4s linear infinite alternate;
 }
+
 
 #sign .login-form .input {
   background: #1f1f1f;

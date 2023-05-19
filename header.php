@@ -19,12 +19,13 @@
           </div>
       </form> 
     </div>
-    <div id="sign">
+    
+<div id="sign">
 <!-- Van modified ↓↓ -->
 <?php if(empty($_SESSION["username"])){
   ?>
   <div class="login"><a rel="nofollow" id="log">Đăng nhập</a>
-      <div class="login-form" id="login-form" style="display: none;">
+      <div class="login-form" id="login-form" st  yle="display: none;">
         <form method="post" action="login.php">
           <div>
             <input type="text" placeholder="Tên đăng nhập" class="input username" name="username">

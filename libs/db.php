@@ -2,7 +2,7 @@
 	$host="localhost";
 	$user="root";
 	$pass="";
-	$db="film";
+	$db="flimne";
 	//error_reporting(0);//Chan thong bao loi
 
 	$link= new mysqli($host,$user,$pass,$db) ;
