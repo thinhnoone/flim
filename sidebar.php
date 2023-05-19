@@ -86,11 +86,11 @@
     </script>
   </div>
   <div class="block ad_location">
-    <div class="ad-img" style="width:300; height:250; display:block; margin-top:13px;">
-      <img src="images/ad-img.png" alt="">
+    *<div class="" style="width:300; height:250; display:block; margin-top:13px;">
+      <img src="images/" alt="">
     </div>
-    <div class="ad-img" style="width:300; height:250; display:block; margin-top:13px;">
-      <img src="images/ad-img.png" alt="">
+    <div class="" style="width:300; height:250; display:block; margin-top:13px;">
+      <img src="images/" alt="">
     </div>
   </div>
 </div>
