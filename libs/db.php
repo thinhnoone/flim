@@ -1,8 +1,8 @@
 <?php
 	$host="localhost";
 	$user="root";
-	$pass="";
-	$db="flimne";
+	$pass="vertrigo";
+	$db="film";
 	//error_reporting(0);//Chan thong bao loi
 
 	$link= new mysqli($host,$user,$pass,$db) ;
