@@ -606,7 +606,7 @@ img.captcha-image {
 #sign .login .login-form{
   height: 197px;
   width: 250px;
-  overflow: hidden;
+ 
   border: none;
   border-radius: 10px;
   background-image: linear-gradient(to bottom right,darkblue, 180px,purple);
@@ -624,12 +624,13 @@ img.captcha-image {
 #sign .login-form::before {
   content: '';
   position: absolute;
-  height: 100%;
+  height: 46%;
   width: 800px;
   top: 0;
- 
+
   z-index: -1;
-  margin-left: -390px;
+  margin-top: 50px;
+  margin-left: -408px;
   background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 255));
   animation: rotate 5s linear infinite;
   transition: all 0.2s linear;
