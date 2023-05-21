@@ -82,7 +82,7 @@
         </div>
 
     </div>
-    <div  id="server-list">
+    <!-- <div  id="server-list">
         <div class="row">
             <div class="col-sm-3">
                 Server
@@ -98,5 +98,5 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 </div>
