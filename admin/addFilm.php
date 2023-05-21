@@ -39,8 +39,6 @@
             color: black;
         }
         .title{
-            
-            /* background-color: #2a9fd6; */
             padding: 10px 30px;
             border-radius: 10px;
             width: 500px;
@@ -66,14 +64,7 @@
                     <h2 class="title">Thêm Phim</h2>
                 </div>
                 <form method="post" id="form-insert-film" name="form-insert-film" class="form-horizontal" action="" role="form" >
-                    <!-- <div>
-                        <label for="ID-film" class="col-md-2">
-                            ID phim
-                        </label>
-                        <div class="col-md-9">
-                            <input type="text" class="form-control" id="ID-film" value="<?php echo "auto increase";?>">
-                        </div>
-                    </div> -->
+                    
                     <div>
                         <label for="film-name" class="col-md-2">
                             Tên phim
@@ -151,10 +142,9 @@
                                 
                                 
                                 
-                                <!-- <?php 
+                                 <?php 
                                     $sql = "SELECT * FROM type_movie";
                                     $result = mysqli_query($link, $sql);
-
                                     if (mysqli_num_rows($result) > 0) { 
                                         while($row = mysqli_fetch_assoc($result)) { ?>
                                         <option value="<?php echo $row["id"];?>">
@@ -166,7 +156,7 @@
                                     else {
                                         echo "No nation";
                                     }
-                                ?> -->
+                                ?> 
                             </select>
                         </div>
                     </div>
@@ -258,7 +248,6 @@
                     <div class="row">
                         <div class="col-md-9"></div>
                         <div class="col-md-3">
-                            <!-- <input class="btn btn-primary" type="submit" value="Post"> -->
                             <button type="submit" class="btn btn-primary" id="button_post" name="button_post">Đăng phim </button>
                         </div>
                     </div>
