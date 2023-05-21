@@ -29,7 +29,7 @@
             <img src="asset/images/adminlogo.webp" alt="welcome admin" class="rounded mx-auto d-block">
             <h2>Welcome Admin</h2>
             <p>
-                Bạn có quyền thêm phim, tập phim và xem các người dùng hiện hành <!DOCTYPE html>
+                Bạn có quyền thêm phim, xem các người dùng và phim hiện hành <!DOCTYPE html>
                 <html lang="en">
                 <head>
                     <meta charset="UTF-8">

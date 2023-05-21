@@ -39,7 +39,7 @@
             <div class="row" id="list-user">
                 <div class="col-md-1"></div>
                 <div class="col-md-8">
-                    <!-- get from database -->
+                   
                     <?php
                         if(isset($_POST["button_search"])){
                             $name = isset($_POST["user"]) ? $_POST["user"] : '';
@@ -47,7 +47,7 @@
                             $sql = "SELECT * FROM user WHERE username LIKE '%{$name}%'";
                             $result = mysqli_query($link, $sql);
                             if (mysqli_num_rows($result) > 0) { ?>
-                                <!-- output data of each row -->
+                                
                                 <table class="table" style="margin: 10px 0px">
                                     <thead>
                                         <tr>

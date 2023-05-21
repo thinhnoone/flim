@@ -39,7 +39,6 @@
             <div class="row" id="list-user">
                 <div class="col-md-1"></div>
                 <div class="col-md-8">
-                    <!-- get from database -->
                     <?php
                         if(isset($_POST["button_search"])){
                             $qry = isset($_POST["qry"]) ? $_POST["qry"] : '';
@@ -53,7 +52,6 @@
                             $sql = $sql_name . " UNION ". $sql_name2 . " UNION ".$sql_director . " UNION ".$sql_actor. " UNION ". $sql_description;
                             $result = mysqli_query($link, $sql);
                             if (mysqli_num_rows($result) > 0) { ?>
-                                <!-- output data of each row -->
                                 <table class="table" style="margin: 10px 0px">
                                     <thead>
                                         <tr>

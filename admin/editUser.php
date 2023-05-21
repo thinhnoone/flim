@@ -16,9 +16,6 @@
     <script type="text/javascript" src="asset/js/bootstrap.min.js"></script>   
 
     <style>
-        /* div {
-            padding-bottom:20px;
-        } */
         .form-control{
             color: black;
         }
@@ -68,7 +65,7 @@
                         <label class="notifyerror" style="visibility: hidden; height: 0px" id="usernameerror">Tên tài khoản chỉ bao gồm ký tự a-z, A-Z và số</label>
                         </div>
                     </div>
-                    <!-- dont have to get value of password from db -->
+                    
                     <div class="form-group">
                         <label class="col-lg-3 control-label">Mật khẩu mới</label>
                         <div class="col-lg-7">
@@ -124,9 +121,9 @@
     </div>
     <script>
         function goToPrePage() {
-                // alert("lallalla");
-                location.href= "edit_delete.php"; //not go to edit_delete.php page,   WHY????
-                // alert("heheheh");
+                
+                location.href= "edit_delete.php"; 
+                
         };
     </script>
     <script language="javascript">
@@ -139,20 +136,15 @@
         var button_update = document.getElementById("button_update");
 
         var usernameerror = document.getElementById("usernameerror");
-        //var passworderror = document.getElementById("passworderror");
         var password1error =  document.getElementById("password1error");
         var password2error1 =  document.getElementById("password2error1");
         var fullnameerror = document.getElementById("fullnameerror");
         var emailerror =  document.getElementById("emailerror");
-        //var phoneerror =  document.getElementById("phoneerror");
 
         var regUsername = /^[A-Za-z0-9]+$/;
         var regFullname = /^[A-Za-z ]+$/;
         var regEmail = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        // var regPhone =  /^\d{10}$/;
         var regPassword = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/
-
-        //var errorPasswordDefault = (passworderror.innerText || passworderror.textContent);
 
         username.onchange = function(){
             checkname();
@@ -291,7 +283,6 @@
 
         function checkNewpassword2(){
             if(!regPassword.test(password2.value)){
-            //password2error1.innerHTML = errorPasswordDefault;
             password2error1.style.visibility = 'visible';
             password2error1.style.height = 'auto';
             return false;
@@ -324,7 +315,7 @@
         if(isset($_POST["button_update"])){
             $username = $_POST["username"];
             $password = $_POST["password"];
-            // echo $username;
+            
                 $hash = password_hash($password, PASSWORD_BCRYPT);
             $email = $_POST["email"];
             $fullName = $_POST["fullname"];

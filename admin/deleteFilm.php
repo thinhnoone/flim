@@ -10,7 +10,6 @@
         <script>
             alert("Xóa phim thành công");
             location.href = "manageUser.php";
-            // alert("hshshsh");
         </script>
 
     <?php        
