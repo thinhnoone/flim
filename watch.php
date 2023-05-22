@@ -13,7 +13,7 @@
                     <li class="breadcrumb-item">
                         <a href="?mod=home">Xem phim</a>
                     </li>
-                    /
+                    
                     <li class="breadcrumb-item">
                       <?php
                         if (isset($_GET['film_id'])) $film_id = $_GET['film_id'];
@@ -27,7 +27,7 @@
                       ?>
                       <a href="?mod=list&type=<?php echo $r2['handle'] ?>&year=2018"><?php echo $r2['name'] ?></a>
                     </li>
-                    /
+                    
                     <?php
                     $sql = "select * from `film` where `id` = '$film_id'";
                     $query= mysqli_query($link, $sql);
