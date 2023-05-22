@@ -10,6 +10,7 @@
 			$rowAd = mysqli_fetch_assoc($resultAd);
 		}
 		
+		
 ?>
 
 	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -33,28 +34,17 @@
 					<i class="fa fa-plus"></i></i> Add film</a>
 				</li>
 				<li>
-					<a href="addEpisode.php">
-					<i class="fa fa-plus"></i></i> Add episode</a>
-				</li>
-				<li>
 					<a href="manageFilm.php">
 					<i class="fa fa-tasks"></i> Manage film</a>
 				</li>
-				<li>
-					<a href="addUser.php">
-						<i class="fa fa-user-plus"></i> Add user</a>
-				</li>
+				
 				<li>
 					<a href="manageUser.php">
 						<i class="fa fa-edit"></i> Manage User</a>
 				</li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right navbar-user">
-				<li>
-					<form class="navbar-search">
-						<input type="text" placeholder="Search" class="form-control">
-					</form>
-				</li>
+				
 				<li class="divider-vertical"></li>
 				<li class="dropdown user-dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">

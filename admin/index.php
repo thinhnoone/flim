@@ -13,7 +13,6 @@
     <script type="text/javascript" src="asset/js/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="asset/js/bootstrap.min.js"></script>
 
-    <!-- you need to include the shieldui css and js assets in order for the charts to work -->
     <link rel="stylesheet" type="text/css" href="http://www.shieldui.com/shared/components/latest/css/light-bootstrap/all.min.css" />
     <link id="gridcss" rel="stylesheet" type="text/css" href="http://www.shieldui.com/shared/components/latest/css/dark-bootstrap/all.min.css" />
 
@@ -30,7 +29,18 @@
             <img src="asset/images/adminlogo.webp" alt="welcome admin" class="rounded mx-auto d-block">
             <h2>Welcome Admin</h2>
             <p>
-                You have all right in this system, such as Post film, edit film and add, edit, delete user,....
+                Bạn có quyền thêm phim, xem các người dùng và phim hiện hành <!DOCTYPE html>
+                <html lang="en">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Document</title>
+                </head>
+                <body>
+                    
+                </body>
+                </html>
             </p>
         </div>
     </div>

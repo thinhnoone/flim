@@ -10,7 +10,6 @@
         <script>
             alert("Xóa User thành công");
             location.href = "manageUser.php";
-            // alert("hshshsh");
         </script>
 
     <?php        

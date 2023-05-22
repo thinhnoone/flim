@@ -137,22 +137,22 @@
                             <option value="2" <?php echo ($row["category_id"] == 2) ?  "selected": "" ?>>Phim bộ</option>
                             <option value="3" <?php echo ($row["category_id"] == 3) ?  "selected": "" ?>>Phim rạp</option>
                             
-                            <!-- <?php 
+                            <?php 
                                 $sql = "SELECT * FROM type_movie";
                                 $result = mysqli_query($link, $sql);
 
                                 if (mysqli_num_rows($result) > 0) { 
                                     while($row = mysqli_fetch_assoc($result)) { ?>
-                                    <option value="<?php echo $row["id"];?>">
+                                    <?php echo $row["id"];?>">
                                         <?php echo $row["name"];?>
-                                    </option>
+                                    
                             <?php 
                                     }
                                 }  
                                 else {
                                     echo "No nation";
                                 }
-                            ?> -->
+                            ?> 
                         </select>
                     </div>
                 </div>
